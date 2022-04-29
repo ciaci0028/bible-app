@@ -10,10 +10,13 @@
 .input {
   width: 300px;
   text-align: center;
+  font-size: 16px;
 }
 
 .button {
   width: 150px;
   height: 40px;
   margin-left: 15px;
+  background-color: rgb(207, 241, 241);
+  font-size: 18px;
 }

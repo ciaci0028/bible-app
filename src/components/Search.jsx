@@ -4,6 +4,14 @@ import '../App.css';
 const Search = () => {
 
     const [input, setInput] = React.useState('');
+
+    const handleClick = (action) => {
+        switch (action) {
+            case 'SEARCH_KEYWORD': {
+                return setInput('It worked kinda')
+            }
+        }
+    }
     
     return (
         <div className='container'>
@@ -16,6 +24,7 @@ const Search = () => {
                 </input>
             <button
                 className='button'
+                onClick={() => handleClick('SEARCH_KEYWORD')}
             >
                 Search
             </button>
