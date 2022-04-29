@@ -2,3 +2,18 @@
   text-align: center;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width: 300px;
+  text-align: center;
+}
+
+.button {
+  width: 150px;
+  height: 40px;
+  margin-left: 15px;
+}
