@@ -1,5 +1,6 @@
-import React from 'react';
-import '../App.css';
+import React from 'react'
+import axios from 'axios'
+import '../App.css'
 
 const Search = () => {
 
@@ -8,8 +9,21 @@ const Search = () => {
     const handleClick = (action) => {
         switch (action) {
             case 'SEARCH_KEYWORD': {
-                return setInput('It worked kinda')
+                axios({
+                    method: 'GET',
+                    url: '/search',
+                    payload: input
+                })
+                .then((response) => {
+                    console.log('get success', response.data)
+                })
+                .catch((error) => {
+                    console.log('get failure', error)
+                })
             }
+            // default: {
+            //     return input
+            // }
         }
     }
     
